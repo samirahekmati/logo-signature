@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+
+    border-left: 1px solid #ccc; /* optional: can be added to right section instead */
+}
+
+/* Left Side */
+.left-side {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+/* Wrap logo and info in a row */
+.logo-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between logo and text */
+}
+
+.left-side .logo {
+    width: 150px;
+    margin-bottom: 0; /* remove bottom margin since it's now in a row */
+}
+
+/* Vertical line between left and right sections */
+.right-side {
+    width: 65%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #ccc; /* thin separator line */
+}
